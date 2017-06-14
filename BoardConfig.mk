@@ -1,4 +1,4 @@
-LOCAL_PATH := device/infinix/d5110_infinix
+LOCAL_PATH := device/infinix/X554
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6580
@@ -63,14 +63,14 @@ TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
 
 # We use prebuilt kernel to compile because no kernel source code
 
-TARGET_PREBUILT_KERNEL := device/infinix/d5110_infinix/kernel
+TARGET_PREBUILT_KERNEL := device/infinix/x554/kernel
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x04000000 --tags_offset 0x0e000000 --board X510-D5110-L-20
 BOARD_CUSTOM_BOOTIMG := true
-TARGET_PREBUILT_RECOVERY_KERNEL := device/infinix/d5110_infinix/kernel
+TARGET_PREBUILT_RECOVERY_KERNEL := device/infinix/x554/kernel
 
-TARGET_RECOVERY_FSTAB := device/infinix/d5110_infinix/rootdir/root/fstab.mt6580
+TARGET_RECOVERY_FSTAB := device/infinix/x554/rootdir/root/fstab.mt6580
 
-TARGET_OTA_ASSERT_DEVICE := d5110,d5110_infinix,Infinix_X510,Infinix_X510_sprout,"Infinix D5110"
+TARGET_OTA_ASSERT_DEVICE := x554,x554_infinix,Infinix_X554,Infinix_HOT 3,"Infinix HOT 3"
 # This is what we need to compile TWRP
 DEVICE_RESOLUTION := 720x1280
 TARGET_SCREEN_HEIGHT := 1280
@@ -99,10 +99,10 @@ DISABLE_DEXPREOPT := true
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_MTK := true
 BOARD_BLUETOOTH_DOES_NOT_USE_RFKILL := true
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/infinix/d5110_infinix/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/infinix/x554/bluetooth
 
 # EGL settings
-BOARD_EGL_CFG := device/infinix/d5110_infinix/rootdir/system/lib/egl/egl.cfg
+BOARD_EGL_CFG := device/infinix/x554/rootdir/system/lib/egl/egl.cfg
 USE_OPENGL_RENDERER := true
 BOARD_EGL_WORKAROUND_BUG_10194508 := true
 
@@ -111,7 +111,7 @@ TARGET_CPU_MEMCPY_OPT_DISABLE := true
 
 # SELINUX
 BOARD_SEPOLICY_DIRS := \
-       device/infinix/d5110_infinix/sepolicy
+       device/infinix/x554/sepolicy
 
 BOARD_SEPOLICY_UNION := \
        device.te \
@@ -123,7 +123,7 @@ BOARD_SEPOLICY_UNION := \
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/virtual/android_usb/android0/f_mass_storage/lun%d/file"
 
 # RIL
-# BOARD_RIL_CLASS := ../../../device/infinix/d5110_infinix/ril/
+# BOARD_RIL_CLASS := ../../../device/infinix/x554/ril/
 
 BOARD_CONNECTIVITY_VENDOR := MediaTek
 BOARD_CONNECTIVITY_MODULE := conn_soc
@@ -140,4 +140,4 @@ WIFI_DRIVER_FW_PATH_AP:=AP
 WIFI_DRIVER_FW_PATH_P2P:=P2P
 
 # GPS
-TARGET_SPECIFIC_HEADER_PATH := device/infinix/d5110_infinix/include
+TARGET_SPECIFIC_HEADER_PATH := device/infinix/x554/include
