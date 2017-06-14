@@ -1,4 +1,4 @@
-Infinix Hot 2 X554 (Failed device)
+Infinix Hot 3 X554 (Failed device)
 ===============================================
 
 Specifications:
