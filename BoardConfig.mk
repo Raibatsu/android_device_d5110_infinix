@@ -1,4 +1,4 @@
-LOCAL_PATH := device/infinix/X554
+LOCAL_PATH := device/infinix/x554
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6580
