@@ -5,7 +5,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
 # call the proprietary setup
-$(call inherit-product-if-exists, vendor/infinix/554_infinix/554_infinix-vendor.mk)
+$(call inherit-product-if-exists, vendor/infinix/x554/x554-vendor.mk)
 
 PRODUCT_CHARACTERISTICS := default
 
